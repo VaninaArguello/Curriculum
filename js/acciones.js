@@ -101,3 +101,10 @@ document.getElementById("arriba").addEventListener('click', function(){
     window.location.href='#top'
 })
 
+window.onscroll = function (){
+  if (window.scrollY > 50) {
+    document.getElementById("arriba").style.transform = "scale(1)"
+  } else {
+    document.getElementById("arriba").style.transform = 'scale(0)'
+  }
+}

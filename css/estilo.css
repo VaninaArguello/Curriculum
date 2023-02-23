@@ -42,7 +42,7 @@ h1 {
     background-color: transparent;
     border: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
     
         
@@ -58,6 +58,8 @@ h1 {
     height: 70px;
     padding: 0;
     margin: 0;
+    transform: scale(0);
+    transition: 0.5s;
     
 }
 
