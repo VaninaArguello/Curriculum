@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: lighter;
+}
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-nature-background_23-2148941599.jpg?w=1380&t=st=1674848493~exp=1674849093~hmac=94c4483dc82e9f27f8b4fd337e6963abfd5490e75018b8d473d16d0a97041b09);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+    padding: 0;
+    min-height: 100vh;
+
+}
+
+h1 {
+    border: none;
+    padding: 25px 25px 25px 25px;
+    background-color: #008b8bab;
+    font-size: 37px;
+    color: rgb(75, 73, 73);
+    text-align: center;
+    font-weight: bold;
+    margin: 0px 0px 2px 0px;
+
+}
+
+[class^="bot"] {
+    background-color: #008a8aab;
+    border: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px 10px 10px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+.pie {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+        
+}
+
+.boton_arriba {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/4894/4894618.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+/* Para teléfonos móviles: */
+@media only screen and (max-width: 600px) {
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina {
+    border: 2px solid #008a8aab;
+    padding-bottom: 5px;
+    display: none;
+    
+}
+
+#foto_carnet {
+    margin: 10px 5px 10px 0;
+    border: 1px solid black;
+    float: right;
+    width: 150px;
+    height: 150px;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: normal ;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-thickness: from-font;
+    margin-left: 10px;
+
+}
+
+#datos * {
+    font-size: 18px;
+    margin: 5px 15px 15px 15px;
+    
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: normal;
+    text-decoration-line: underline;
+    text-decoration-thickness: from-font;
+    margin-left: 10px;
+    margin-right: 2px;
+
+}
+
+ul {
+    font-size: 16px;
+    margin-left: 10px;
+    padding-left: 10px;
+    
+}
+
+li {
+    font-size: 15px;
+    margin: 15px 5px 5px 5px;
+    list-style-position: inside;
+        
+}
+
+p {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.boton_arriba {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+}
+}
+
+/* Para escritorio: */
+@media only screen and (min-width: 601px) {
+    
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #008a8aab;
+}  
+
+.pagina {
+    display: none;
+    block-size: 1400px;
+    margin-left: 10px;
+}
+
+[class^="bot"] {
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+#foto_carnet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 18px;
+}
+
+h2 { 
+    text-align: center;
+    font-size: 35px;
+    text-decoration-line: underline;
+    text-decoration-thickness: from-font;
+}
+
+#datos * {
+    font-size: 23px;
+    width: 350px;       
+    margin: 10px auto;
+    list-style: none;
+
+}
+
+#datos>li::before {
+    
+    content: "\2022";  
+    color: #008a8aab; 
+    display: inline-block; 
+    width: 35px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 25px;
+    text-decoration-line: underline;
+    text-decoration-thickness: from-font;
+}
+
+.lista {
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-decoration-thickness: from-font;
+    margin-left: 0px;
+    
+}
+
+li {
+    font-size: 18px;
+    
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 10px;
+}
+}
